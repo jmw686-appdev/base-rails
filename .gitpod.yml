@@ -1,7 +1,13 @@
-image: jelaniwoods/appdev2021-base-rails
-
+image:
+  file: .gitpod.Dockerfile
 tasks:
-  - init: bin/setup 
+  - name: Setup
+    init: bin/setup
+github:
+  prebuilds:
+    branches: true
+    pullRequestsFromForks: true
+    addLabel: true
 ports:
   - port: 3000
     onOpen: open-preview
