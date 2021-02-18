@@ -6,6 +6,7 @@ tasks:
 github:
   prebuilds:
     branches: true
+    addBadge: true
     pullRequestsFromForks: true
     addLabel: true
 ports:
