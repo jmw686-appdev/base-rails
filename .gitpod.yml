@@ -1,7 +1,15 @@
-image:
-  file: .gitpod.Dockerfile
 tasks:
-  - name: Setup
+  - name: htmlbeautifier
+    init: gem install htmlbeautifier
+  - name: rufo
+    init: gem install rufo
+  - name: heroku
+    init: curl https://cli-assets.heroku.com/install.sh | sh
+  - name: postgres
+    init: sudo apt-get update && sudo apt-get install -y nodejs yarn postgresql-client
+  - name: postgres2
+    init: sudo apt install -y postgresql postgresql-contrib libpq-dev psmisc lsof
+  - name: setup
     init: bin/setup
 github:
   prebuilds:
