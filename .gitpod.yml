@@ -1,6 +1,8 @@
 image: gitpod/workspace-full
 tasks:
-  - init: bundle install
+  - init: bundle install &&
+      echo "rvm use 2.6.6" >> ~/.bashrc &&
+      echo "rvm_silence_path_mismatch_check_flag=1" >> ~/.rvmrc
 ports:
   - port: 3000
     onOpen: open-preview
