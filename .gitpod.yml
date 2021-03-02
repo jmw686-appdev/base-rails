@@ -1,5 +1,6 @@
 tasks:
   - init: bin/setup
+  prebuild: bundle install
 github:
   prebuilds:
     branches: true
