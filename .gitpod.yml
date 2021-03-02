@@ -1,16 +1,9 @@
+image: gitpod/workspace-full
 tasks:
-  - init: bin/setup
-  prebuild: bundle install
-github:
-  prebuilds:
-    branches: true
-    addBadge: true
-    pullRequestsFromForks: true
-    addLabel: true
+  - init: bundle install
 ports:
   - port: 3000
     onOpen: open-preview
-    
 vscode:
   extensions:
     - shd101wyy.markdown-preview-enhanced@0.5.1:s3vD5qiY6/HbtRrgDlbMiQ==
