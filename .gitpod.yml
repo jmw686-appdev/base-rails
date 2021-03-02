@@ -1,8 +1,7 @@
-image: gitpod/workspace-full
+image:	
+  file: .gitpod.Dockerfile
 tasks:
-  - init: bundle install &&
-      echo "rvm use 2.6.6" >> ~/.bashrc &&
-      echo "rvm_silence_path_mismatch_check_flag=1" >> ~/.rvmrc
+  - init: bundle install
 ports:
   - port: 3000
     onOpen: open-preview
